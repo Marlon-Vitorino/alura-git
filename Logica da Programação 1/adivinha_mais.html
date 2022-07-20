@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+<script>
+
+	var segredo = Math.round(Math.random() * 10);
+
+	var input = document.querySelector("input");
+						//pega a Tag do mundo HTML e joga para o mundo Javascript. Recebe como parametro o nome da Tag
+
+	input.focus();
+
+	function verifica() {
+	//criar a função para que a comparação não seja executa, mas sim guardada.
+
+		if(input.value == segredo) {
+		//value: valor digitado no campo(input).
+
+			alert("Você ACERTOU!");
+		}else {
+
+			alert("Você ERROU!!!!!");
+		}
+
+		//apagar o valor digitado.
+		input.value = "";
+		input.focus();
+		//deixar selecionado o campo, sem precisar clicar.	
+	}
+
+	
+	var button = document.querySelector("button");
+	button.onclick = verifica;
+			//on.click significa "No clicar", eu quero que você verifica.
+					//ao colocar verifica sem os parenteses "()" eu trago a função para que seja executada ao clicar no button, ao invés do valor resultante da função.
+
+//<input/> abre um campo para poder digitar. Em inglês significa "entrada".
+
+//<button></button> ela abre e fecha
+
+
+</script>
+

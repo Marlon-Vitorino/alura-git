@@ -1,0 +1,134 @@
+<meta charset="UTF-8">
+
+<h1>Formatação: tamanho grande e negrito.</h1>
+Pode variar de <h1> até <h6> sendo a primeira de maior importancia. Utilizada em titulos.
+
+
+<br>pular linha
+
+
+Utilizar essa função para colocar links: <a href="http://www.alura.com.br">aqui</a>!
+
+
+
+<input/>	abre um campo para poder digitar. Em inglês significa "entrada".
+
+
+<button>texto</button>		aparece um botao na pagina.
+
+
+<script>
+
+		var input = document.querySelector("input"); //pega a Tag do mundo HTML e joga para o mundo Javascript. Recebe como parametro o nome da Tag
+
+		input.value //informa o valor digitado. Pode usar essa função para realizar comparação. 
+		input.value = ""; //faz com que o campo de texto seja esvaziado quando o usuário errar o valor digitado.
+
+		input.focus(); //deixa selecionado o campo, sem precisar clicar.
+
+
+
+	var button = document.querySelector("button");
+	//on.click significa "No clicar", eu quero que você verifica.
+	button.onclick = função; //ao colocar o nome da "função(sem os parenteses) que verifica as condições" eu trago a função para que seja executada ao clicar no button, ao invés do valor resultante da função.
+
+
+var segredos = [5,7,10,2,3]; //[]significa arrays. A posição dentro do colchetes é: 0,1,2,...
+segredos.push(numeroAleatorio); //ao buscar numeros aleatorios, push permite empurrar elementos dentro da lista do arrays.
+
+	console.log(segredos); //se eu desejar saber quais foram os numeros aleatorios sorteados.
+
+
+
+
+		function pulalinha() { //function executa o que estiver dentro. Qualquer frase que tiver "pulalinha" executara conforme o que for editado nessa função.
+
+			document.write("<br>");//aqui pula uma linha
+
+			document.write("<br><hr><br>");// aqui pula duas linhas e acrescenta um traço(linha horizontal). Bom para separar um paragrafo do outro.
+		}
+
+		function exibeParagrafo(paragrafo) {
+	        document.write("<p>" + paragrafo + "</p>"); //a tag <P> é a representação de um paragrafo em HTML.
+	        
+	        pulaLinha();//consigo executar uma função dentro de outra.
+
+	        document.write("<big>" + paragrafo + "</big>");//Exibe o texto marcado com um tamanho de fonte maior
+
+	    }
+
+
+		alert("Exibe um Alerta(Popup) na pagina");
+
+
+	document.write("Escreve a mensagem na pagina");
+
+
+		var x = Y//uma variavel(x) que recebe qualquer valor definido(y);
+
+
+
+	Math.round("Utilizamos para arredondar numeros decimais para inteiros");
+
+	Math.random(() * 10);//o computador gera um numero aleatorio. Se queremos decimais, multiplicamos por 10, centenas, por 100,...
+
+
+
+		[[function calculaImc(altura, peso) {
+
+		    var imc = peso / (altura * altura);
+		    return imc;
+
+		}
+			var imcFlavio = calculaImc(1.71, 73);
+			var imcAmigo = calculaImc(1.72, 68);
+
+		mostra(imcFlavio);
+		mostra(imcAmigo);]]//Ao calcularmos o IMC dentro da função, e a variável IMC guardar o resultado, a palavra return deixa disponível à esquerda da variável o resultado que foi calculado pela função.
+
+
+
+	prompt("Trata-se de uma função do JavaScript, que receberá como parâmetro a pergunta que desejamos fazer ao usuário");
+
+	parseInt("uma função existente no JavaScript, e preparada para receber um texto a ser convertido em número."); //somente converte em numero inteiro.
+
+	parseFloat("12.13"); //utilize para converter em numero mantendo as casas decimais exemplo: 12.13.
+
+
+
+		if(x < y && x > y){// quando queremos colocar mais uma condição utilizamos "&&".
+
+			//if é o mesmo que se "Se". É uma condição. No caso, se o resultado dentro dos parenteses for verdadeiro, executa o que estiver entre {}.
+		
+		} else{
+
+			//else é o mesmo que "Se não". Utilizamos quando queremos executar algo tambem quando o resultado da condição for falso
+		}
+
+
+
+	while(repetir <= limite) {
+
+		//se a condição for verdadeira dentro do while, indica que sempre será repetido o conteúdo do bloco dessa função.;
+
+		repetir = repetir + x;//necessario colocar essa condição de repetição, caso contrario repetira infinitamente.
+	}
+
+
+			//são sinais de condição: ==(igual), >(maior), <(menor), <= ou >=(maior ou igaul e menor ou igual), !==(diferente).
+
+			isNaN(numero)//significa "Not a number". É uma condição para identificar se o que foi escrito não é um numero e retorna verdadeiro.
+
+	
+
+	for(var multiplicador = 1; multiplicador<= 10; multiplicador++) { //(inicialização do multiplicador; condição para repetição; acrescer ao multiplicador(++ é um atalho para incrementarmos uma variável, sempre somando 1))
+
+		//Outra forma de repetição.
+	}
+	for(posição1; posicao2 < arrays.length; posicao3) //essa é outra forma de usar na codição: length informa quantos criterios tem no arrays.
+
+
+		break;//quebra o loop de repetição.
+
+
+</script>

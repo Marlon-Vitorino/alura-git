@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br><br>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+
+	// meu resultado
+	var limite = 100;
+	var numeroPar = 2;
+
+	while(numeroPar <= limite) {
+
+
+		mostra(numeroPar);
+		numeroPar = numeroPar + 2;
+	}
+
+	mostra("FIM");
+
+
+	//resultado do professor
+	var contador = 2;
+    while(contador <= 100) {
+        mostra(contador);
+        contador = contador + 2; // incrementa de dois em dois
+    }
+    mostra("FIM");
+	
+</script>

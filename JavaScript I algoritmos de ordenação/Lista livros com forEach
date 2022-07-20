@@ -1,0 +1,71 @@
+const precosLivros = [
+
+    {
+
+        titulo: "JavaScript",
+        preco: 25
+    },
+    {
+        titulo: "PHP",
+        preco: 15
+    },
+    {
+        titulo: "Java",
+        preco: 30
+    },
+    {
+        titulo: "Elixir",
+        preco: 50
+    },
+    {
+        titulo: "Go",
+        preco: 45
+    },
+    {
+        titulo: "Python",
+        preco: 20
+    }
+];
+
+function menorValor(arrProdutos, posicaoInicial) {
+
+    let maisBarato = posicaoInicial;
+
+
+for(let atual = posicaoInicial; atual < arrProdutos.length; atual++) {
+    if(arrProdutos[atual].preco < arrProdutos[maisBarato].preco) {
+        maisBarato = atual
+        }
+    }
+    return maisBarato;
+}
+
+/*
+for(let atual = 0; atual < precosLivros.length; atual++) {
+    let menor =menorValor(precosLivros, atual);
+
+    let livroAtual = precosLivros[atual];
+    console.log('posicao atual', atual)
+    console.log('livro atual', precosLivros[atual])
+    let livroMenorPreco = precosLivros[menor];
+    console.log('livro menor preço', precosLivros[menor])
+
+    precosLivros[atual] = livroMenorPreco
+    precosLivros[menor] = livroAtual
+}
+*/
+
+precosLivros.forEach((_, indice) => {
+ let menor = menorValor(precosLivros, indice)
+
+ let livroAtual = precosLivros[indice];
+console.log('posicao atual', indice)
+    console.log('livro atual', precosLivros[indice])
+ let livroMenorPreco = precosLivros[menor];
+console.log('livro menor preço', precosLivros[menor])
+
+ precosLivros[indice] = livroMenorPreco
+ precosLivros[menor] = livroAtual 
+})
+
+console.log(precosLivros)
